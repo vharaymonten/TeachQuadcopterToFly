@@ -12,14 +12,14 @@ In this repository you can find my relevant Udacity DLND projects, as results an
 ## Teach Quadcopter How to Fly
 
 ### Introduction 
-In this project i had to teach agent which is the quadcopter to take off by itself and by no any human interference.  There are four rotors on the quadcopter which its trust powers needs be adjusted in order to fly properly. Instead of hardcoding the quadcopter's motors, i applied Reinforcement Learning of which learning by interactions to the agent. Reinforcement Learning also has many algorithms like, Deep-Q Networks, Monte Carolo, Temporal Diffrence, Policy Gradient, Actor Critic, Deterministic Policy Gradient , and etc.
+In this project, i had to teach the agent, the quadcopter, to take off by itself and by no any human interference. There are four rotors set on the quadcopter which make the Quadcopter fly in the air. In order to make it fly properly and prevent it from falling, its roters' trust power need to be adjusted to a certain value based on what state the Agent is in. Hardcoding the Quadcopter rotors' would be a doubtful solution. Because it requires a lot of time and the process of hardcoding it is undeniably difficult. However, there's an easier way to solve such quite complex problem, that's using Deep Learning model.
 
 ### Algoritm for the Task
-Due to countinous state space and action space, Deep-Q Learning, which heavily relies on discrete action space as outputs is unsuited for the task. Therefore, leaving Policy Gradient, Actor Critic, Deterministic Policy Gradient as options to solve the problem would be the most suitable. However, there is stronger a Algorithms that belived can solve the task more efficently, that is Deep Deterministic Policy Gradient. DDPG combines Deterministic Policy Gradient, Actor Critic, Temporal Difference, and Fixed Target into one set of Algoritm. To "encourge" some explorations to the agent, noises called OU-Noise are added to agent's actions.
+Due to continuous state space and action space, Deep-Q Learning, which heavily relies on discrete action space as outputs is unsuited for the task. Therefore, leaving Policy Gradient, Actor Critic, Deterministic Policy Gradient as options to solve the problem would be the most suitable. However, there is a stronger Algorithms that is belived capable of solving the task more efficently, that is Deep Deterministic Policy Gradient. DDPG combines both Deterministic Policy Gradient, Actor Critic, Temporal Difference, and Fixed Target into one set of Algoritm. To "encourge" some explorations to the agent, noises called OU-Noise are added to agent's actions.
 
 ### Conclusion
 
-While Algorithm like Deep-Q Learning that outputs discrete action space, DDPG which can outputs both countinous and discrete action space was chosen to be used by the agent to solve the task. DDPG also has been proven able to overcome problems that other Reinforcement Learning can't. After many episodes of training using DDPG, the agent is capable of flying by itself.  
+While Algorithm like Deep-Q Learning only able to output discrete action space, DDPG which can outputs both continuous and discrete action space was chosen to be used by the agent to solve the task. DDPG also has been proven able to overcome problems that other strong Reinforcement Learning Algoritms can't . After many episodes of training with DDPG, the agent is able to fly by itself.  
  
 ---
 
